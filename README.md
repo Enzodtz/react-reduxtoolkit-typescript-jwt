@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+# react-reduxtoolkit-typescript-jwt
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Demo/Template for typed apps using ReduxToolkit with JWT auth.
 
-## Available Scripts
+### Getting Started
 
-In the project directory, you can run:
+```
+npm i
+npm start
+```
 
-### `npm start`
+### Backend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The backend for this application can be found [here](https://github.com/Enzodtz/django-rest-framework-jwt-demo). It's using a simple JWT backend made with Django Rest Framework and SimpleJWT module. Notice that inside the project, this is high customizable, and you won't need to change a lot, due to JWT patterns.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Useful Code Understanding Guide
 
-### `npm test`
+This app uses `redux-toolkit`, so if you're familiar with it, it will be easier to you to understand the project and work on new features.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `features/auth/` the files for each JWT lifetime processes, you might need to edit them for your backend.
+- `pages/dashboard` example of usage of user in global state
+- `App.tsx` example of private routes (`pages/SecretPage.tsx`)
+- `pages/Login.tsx pages/Register.tsx` example of form submits and error handle for this backend
+- `app/hooks`.ts hooks for `useDispatch` and `useSelector` with `app/store` type definitions
+- `app/store.ts` the store for the project. Notice the first `load` action dispatch
