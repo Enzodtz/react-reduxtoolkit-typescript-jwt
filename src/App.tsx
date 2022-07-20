@@ -39,7 +39,7 @@ function App() {
             </Routes>
           </Router>
         </ThemeProvider>
-        <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
+        {/* <ReactQueryDevtools initialIsOpen={false} position="bottom-right" /> */}
       </QueryClientProvider>
     </>
   );
