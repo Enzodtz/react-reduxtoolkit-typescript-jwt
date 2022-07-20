@@ -1,10 +1,6 @@
 import { createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import handleFormError from "common/handle_form_error";
-import {
-  AuthStateType,
-  RegisterFormType,
-  UserType,
-} from "common/types/auth.types";
+import { AuthStateType, RegisterFormType, UserType } from "common/types/auth";
 import authService from "./authService";
 import { refresh } from "./refresh";
 import jwt from "jwt-decode";

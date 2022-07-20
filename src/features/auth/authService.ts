@@ -1,8 +1,4 @@
-import {
-  LoginFormType,
-  RegisterFormType,
-  UserType,
-} from "common/types/auth.types";
+import { LoginFormType, RegisterFormType, UserType } from "common/types/auth";
 import axios, { setAxiosToken } from "config/axios";
 import jwt from "jwt-decode";
 

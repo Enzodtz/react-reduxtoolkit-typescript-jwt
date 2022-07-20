@@ -5,7 +5,7 @@ import {
   LoginFormType,
   RegisterFormType,
   UserType,
-} from "common/types/auth.types";
+} from "common/types/auth";
 import authService from "./authService";
 import constants from "config/constants";
 import { setAxiosToken } from "config/axios";

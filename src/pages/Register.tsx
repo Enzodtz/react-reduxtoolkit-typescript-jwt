@@ -2,7 +2,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "app/hooks";
 import { register as authRegister } from "features/auth/authSlice";
-import { RegisterFormType } from "common/types/auth.types";
+import { RegisterFormType } from "common/types/auth";
 import { useEffect, useState } from "react";
 
 function Register() {

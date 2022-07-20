@@ -1,5 +1,5 @@
 import { createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { AuthStateType, UserType } from "common/types/auth.types";
+import { AuthStateType, UserType } from "common/types/auth";
 import authService from "./authService";
 import jwt from "jwt-decode";
 import { setAxiosToken } from "config/axios";
